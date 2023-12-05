@@ -1,0 +1,16 @@
+C:\Users\DESB2101\Desktop\ToolAnchor\ToolAnchor\bin\Debug\ToolAnchor.exe.config
+C:\Users\DESB2101\Desktop\ToolAnchor\ToolAnchor\bin\Debug\ToolAnchor.exe
+C:\Users\DESB2101\Desktop\ToolAnchor\ToolAnchor\bin\Debug\ToolAnchor.pdb
+C:\Users\DESB2101\Desktop\ToolAnchor\ToolAnchor\obj\Debug\ToolAnchor.csproj.AssemblyReference.cache
+C:\Users\DESB2101\Desktop\ToolAnchor\ToolAnchor\obj\Debug\ToolAnchor.csproj.SuggestedBindingRedirects.cache
+C:\Users\DESB2101\Desktop\ToolAnchor\ToolAnchor\obj\Debug\MainWindow.g.cs
+C:\Users\DESB2101\Desktop\ToolAnchor\ToolAnchor\obj\Debug\App.g.cs
+C:\Users\DESB2101\Desktop\ToolAnchor\ToolAnchor\obj\Debug\ToolAnchor_MarkupCompile.cache
+C:\Users\DESB2101\Desktop\ToolAnchor\ToolAnchor\obj\Debug\ToolAnchor_MarkupCompile.lref
+C:\Users\DESB2101\Desktop\ToolAnchor\ToolAnchor\obj\Debug\MainWindow.baml
+C:\Users\DESB2101\Desktop\ToolAnchor\ToolAnchor\obj\Debug\ToolAnchor.g.resources
+C:\Users\DESB2101\Desktop\ToolAnchor\ToolAnchor\obj\Debug\ToolAnchor.Properties.Resources.resources
+C:\Users\DESB2101\Desktop\ToolAnchor\ToolAnchor\obj\Debug\ToolAnchor.csproj.GenerateResource.cache
+C:\Users\DESB2101\Desktop\ToolAnchor\ToolAnchor\obj\Debug\ToolAnchor.csproj.CoreCompileInputs.cache
+C:\Users\DESB2101\Desktop\ToolAnchor\ToolAnchor\obj\Debug\ToolAnchor.exe
+C:\Users\DESB2101\Desktop\ToolAnchor\ToolAnchor\obj\Debug\ToolAnchor.pdb
