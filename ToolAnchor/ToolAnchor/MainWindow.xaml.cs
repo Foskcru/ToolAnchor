@@ -67,7 +67,7 @@ namespace ToolAnchor
         private void WidthText_TextChanged(object sender, TextChangedEventArgs e)
         {
             ChangeVisibility(WidthText, DefaultWidth);
-            if (WidthText.Text != "" && float.TryParse(WidthText.Text, out _))
+            if (string.IsNullOrEmpty(WidthText.Text) && float.TryParse(WidthText.Text, out _))
                 widthRatio = 1 / float.Parse(WidthText.Text);
 
 
@@ -77,7 +77,7 @@ namespace ToolAnchor
         private void HeightText_TextChanged(object sender, TextChangedEventArgs e)
         {
             ChangeVisibility(HeightText, DefaultHeight);
-            if (HeightText.Text != "" && float.TryParse(HeightText.Text, out _))
+            if (string.IsNullOrEmpty(HeightText.Text) && float.TryParse(HeightText.Text, out _))
                 heightRatio = 1 / float.Parse(HeightText.Text);
             SetAnchorAdjust();
         }
@@ -104,7 +104,7 @@ namespace ToolAnchor
         private void OffsetLeftText_TextChanged(object sender, TextChangedEventArgs e)
         {
             ChangeVisibility(OffsetLeftText, DefaultOffsetLeft);
-            if (OffsetLeftText.Text != "" && float.TryParse(OffsetLeftText.Text, out _))
+            if (string.IsNullOrEmpty(OffsetLeftText.Text) && float.TryParse(OffsetLeftText.Text, out _))
                 offsetLeft = float.Parse(OffsetLeftText.Text);
             SetAnchorAdjust();
         }
@@ -112,7 +112,7 @@ namespace ToolAnchor
         private void OffsetTopText_TextChanged(object sender, TextChangedEventArgs e)
         {
             ChangeVisibility(OffsetTopText, DefaultOffsetTop);
-            if (OffsetTopText.Text != "" && float.TryParse(OffsetTopText.Text, out _))
+            if (string.IsNullOrEmpty(OffsetTopText.Text) && float.TryParse(OffsetTopText.Text, out _))
                 offsetTop = float.Parse(OffsetTopText.Text);
             SetAnchorAdjust();
         }
@@ -120,7 +120,7 @@ namespace ToolAnchor
         private void OffsetRightText_TextChanged(object sender, TextChangedEventArgs e)
         {
             ChangeVisibility(OffsetRightText, DefaultOffsetRight);
-            if (OffsetRightText.Text != "" && float.TryParse(OffsetRightText.Text, out _))
+            if (string.IsNullOrEmpty(OffsetRightText.Text) && float.TryParse(OffsetRightText.Text, out _))
                 offsetRight = float.Parse(OffsetRightText.Text);
             SetAnchorAdjust();
         }
@@ -128,7 +128,7 @@ namespace ToolAnchor
         private void OffsetBottomText_TextChanged(object sender, TextChangedEventArgs e)
         {
             ChangeVisibility(OffsetBottomText, DefaultOffsetBottom);
-            if (OffsetBottomText.Text != "" && float.TryParse(OffsetBottomText.Text, out _))
+            if (string.IsNullOrEmpty(OffsetBottomText.Text) && float.TryParse(OffsetBottomText.Text, out _))
                 offsetBottom = float.Parse(OffsetBottomText.Text);
             SetAnchorAdjust();
         }
@@ -168,8 +168,9 @@ namespace ToolAnchor
 
         private void Copy_Click(object sender, RoutedEventArgs e)
         {
-            if (AnchorAdjustText.Text != "")
-                Clipboard.SetText(AnchorAdjustText.Text);
+            //Clipboard.SetDataObject("test");
+            //if (string.IsNullOrEmpty(AnchorAdjustText.Text))
+            //    Clipboard.SetText(AnchorAdjustText.Text);
         }
     }
 }

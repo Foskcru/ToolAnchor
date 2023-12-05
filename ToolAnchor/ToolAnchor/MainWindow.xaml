@@ -16,10 +16,10 @@
         </Grid.RowDefinitions>
         <TextBox x:Name="WidthText" Margin="10,10,10,33" TextWrapping="Wrap" Foreground="#FFAFAFAF" Background="#FF151515" TextChanged="WidthText_TextChanged"/>
         <TextBox x:Name="HeightText" Margin="10,33,10,10" TextWrapping="Wrap" Foreground="#FFAFAFAF" Background="#FF151515" TextChanged="HeightText_TextChanged"/>
+        <TextBox x:Name="AnchorsText" Margin="10,10,10,10" TextWrapping="Wrap" Grid.Row="1" Foreground="#FFAFAFAF" Background="#FF151515" TextChanged="AnchorsText_TextChanged"/>
         <TextBox x:Name="OffsetLeftText" Margin="10,10,10,79" TextWrapping="Wrap" Grid.Row="2" Foreground="#FFAFAFAF" Background="#FF151515" TextChanged="OffsetLeftText_TextChanged"/>
         <TextBox x:Name="OffsetTopText" Margin="10,33,10,56" TextWrapping="Wrap" Grid.Row="2" Foreground="#FFAFAFAF" Background="#FF151515" TextChanged="OffsetTopText_TextChanged"/>
         <TextBox x:Name="OffsetRightText" Margin="10,56,10,33" TextWrapping="Wrap" Grid.Row="2" Foreground="#FFAFAFAF" Background="#FF151515" TextChanged="OffsetRightText_TextChanged"/>
-        <TextBox x:Name="AnchorsText" Margin="10,10,10,10" TextWrapping="Wrap" Grid.Row="1" Foreground="#FFAFAFAF" Background="#FF151515" TextChanged="AnchorsText_TextChanged"/>
         <TextBox x:Name="OffsetBottomText" Margin="10,79,10,10" TextWrapping="Wrap" Grid.Row="2" Background="#FF151515" Foreground="#FFAFAFAF" TextChanged="OffsetBottomText_TextChanged"/>
         <TextBox x:Name="AnchorAdjustText" Margin="10,10,10,10" TextWrapping="Wrap" Grid.Row="3" Foreground="#FFAFAFAF" Background="#FF151515" TextChanged="AnchorAdjustText_TextChanged"/>
         <TextBlock x:Name="DefaultWidth" Margin="10,10,290,33" TextWrapping="Wrap" Text=" Width" Foreground="#FFAFAFAF" IsHitTestVisible="False"/>
