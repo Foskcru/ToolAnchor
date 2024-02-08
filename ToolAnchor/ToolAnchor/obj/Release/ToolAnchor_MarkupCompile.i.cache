@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\GitHub\ToolAnchor\ToolAnchor\ToolAnchor\obj\Debug\
+D:\GitHub\ToolAnchor\ToolAnchor\ToolAnchor\obj\Release\
 ToolAnchor
 none
 false
-DEBUG;TRACE
+TRACE
 D:\GitHub\ToolAnchor\ToolAnchor\ToolAnchor\App.xaml
 1219584333
 
-51579654133
+6-1159578175
 13-1310406943
 MainWindow.xaml;
 
-True
+False
 

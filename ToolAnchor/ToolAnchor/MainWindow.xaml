@@ -5,34 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ToolAnchor"
         mc:Ignorable="d"
-        Title="Tool Anchor" Height="340" Width="500" Background="#FF242424">
+        
+        Title="Tool Anchor" Height="340" Width="500" Background="#FF242424" Icon="/ico.ico">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="150"/>
             <RowDefinition Height="Auto" MinHeight="38"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBox x:Name="WidthText" Margin="10,10,10,33" TextWrapping="Wrap" Foreground="#FFAFAFAF" Background="#FF151515" TextChanged="WidthText_TextChanged"/>
         <TextBox x:Name="HeightText" Margin="10,33,10,10" TextWrapping="Wrap" Foreground="#FFAFAFAF" Background="#FF151515" TextChanged="HeightText_TextChanged"/>
-        <TextBox x:Name="AnchorsText" Margin="10,10,10,10" TextWrapping="Wrap" Grid.Row="1" Foreground="#FFAFAFAF" Background="#FF151515" TextChanged="AnchorsText_TextChanged"/>
-        <TextBox x:Name="OffsetLeftText" Margin="10,10,10,79" TextWrapping="Wrap" Grid.Row="2" Foreground="#FFAFAFAF" Background="#FF151515" TextChanged="OffsetLeftText_TextChanged"/>
-        <TextBox x:Name="OffsetTopText" Margin="10,33,10,56" TextWrapping="Wrap" Grid.Row="2" Foreground="#FFAFAFAF" Background="#FF151515" TextChanged="OffsetTopText_TextChanged"/>
-        <TextBox x:Name="OffsetRightText" Margin="10,56,10,33" TextWrapping="Wrap" Grid.Row="2" Foreground="#FFAFAFAF" Background="#FF151515" TextChanged="OffsetRightText_TextChanged"/>
-        <TextBox x:Name="OffsetBottomText" Margin="10,79,10,10" TextWrapping="Wrap" Grid.Row="2" Background="#FF151515" Foreground="#FFAFAFAF" TextChanged="OffsetBottomText_TextChanged"/>
-        <TextBox x:Name="AnchorAdjustText" Margin="10,10,10,10" TextWrapping="Wrap" Grid.Row="3" Foreground="#FFAFAFAF" Background="#FF151515" TextChanged="AnchorAdjustText_TextChanged"/>
+        <RichTextBox x:Name="WidgetRichTextBox" TextChanged="WidgetRichTextBox_TextChanged" Grid.Row="1" Background="#FF151515" Foreground="#FFAFAFAF" Margin="10,10,10,10" MaxWidth="480" MaxHeight="142">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <TextBox x:Name="AnchorAdjustText" Margin="10,10,10,10" TextWrapping="Wrap" Grid.Row="2" Foreground="#FFAFAFAF" Background="#FF151515" TextChanged="AnchorAdjustText_TextChanged"/>
         <TextBlock x:Name="DefaultWidth" Margin="10,10,290,33" TextWrapping="Wrap" Text=" Width" Foreground="#FFAFAFAF" IsHitTestVisible="False"/>
         <TextBlock x:Name="DefaultHeight" Margin="10,33,290,10" TextWrapping="Wrap" Text=" Height" IsHitTestVisible="False" Foreground="#FFAFAFAF"/>
-        <TextBlock x:Name="DefaultAnchors" Margin="10,10,290,10" TextWrapping="Wrap" Text=" Anchors" Grid.Row="1" IsHitTestVisible="False" Foreground="#FFAFAFAF"/>
-        <TextBlock x:Name="DefaultOffsetLeft" Margin="10,10,290,79" TextWrapping="Wrap" Text=" Offset Left" Grid.Row="2" IsHitTestVisible="False" Foreground="#FFAFAFAF"/>
-        <TextBlock x:Name="DefaultOffsetTop" Margin="10,33,290,56" TextWrapping="Wrap" Text=" Offset Top" Grid.Row="2" IsHitTestVisible="False" Foreground="#FFAFAFAF"/>
-        <TextBlock x:Name="DefaultOffsetRight" Margin="10,56,290,33" TextWrapping="Wrap" Text=" Offset Right" Grid.Row="2" IsHitTestVisible="False" Foreground="#FFAFAFAF"/>
-        <TextBlock x:Name="DefaultOffsetBottom" Margin="10,79,290,10" TextWrapping="Wrap" Text=" Offset Bottom" Grid.Row="2" IsHitTestVisible="False" Foreground="#FFAFAFAF"/>
-        <TextBlock x:Name="DefaultAnchorAdjust" Margin="10,10,290,10" TextWrapping="Wrap" Text=" Anchor Adjust" Grid.Row="3" IsHitTestVisible="False" Foreground="#FFAFAFAF"/>
-        <Canvas Grid.Row="4"/>
-        <Button x:Name="Copy" Content="Copy" Margin="67,0,283,10" Grid.Row="4" Click="Copy_Click" Background="#FFE8175D" FontWeight="Bold" FontSize="24" BorderBrush="#FFE8175D"/>
-        <Button x:Name="Clear" Content="Clear" Margin="283,0,67,10" Grid.Row="4" Click="Clear_Click" FontWeight="Bold" FontSize="24" Background="#FF686868" BorderBrush="#FF686868"/>
+        <TextBlock x:Name="DefaultWidget" Margin="10,10,290,10" TextWrapping="Wrap" Text=" Widget" IsHitTestVisible="False" Foreground="#FFAFAFAF" Grid.Row="1"/>
+        <TextBlock x:Name="DefaultAnchorAdjust" Margin="10,10,290,10" TextWrapping="Wrap" Grid.Row="2" IsHitTestVisible="False" Foreground="#FFAFAFAF" Text=" Anchor Adjustg"/>
+        <Canvas Grid.Row="3"/>
+        <Button x:Name="Copy" Content="Copy" Margin="67,0,283,10" Grid.Row="3" Click="Copy_Click" Background="#FFE8175D" FontWeight="Bold" FontSize="24" BorderBrush="#FFE8175D"/>
+        <Button x:Name="Clear" Content="Clear" Margin="283,0,67,10" Grid.Row="3" Click="Clear_Click" FontWeight="Bold" FontSize="24" Background="#FF686868" BorderBrush="#FF686868"/>
 
     </Grid>
 </Window>
