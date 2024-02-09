@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ToolAnchor"
         mc:Ignorable="d"
         
-        Title="Tool Anchor" Height="340" Width="500" Background="#FF242424" Icon="/ico.ico">
+        Title="Tool Anchor" Height="340" Width="500" Background="#FF242424" Icon="/UserWidget_64-svg-ICO.ico">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -31,6 +31,7 @@
         <Canvas Grid.Row="3"/>
         <Button x:Name="Copy" Content="Copy" Margin="67,0,283,10" Grid.Row="3" Click="Copy_Click" Background="#FFE8175D" FontWeight="Bold" FontSize="24" BorderBrush="#FFE8175D"/>
         <Button x:Name="Clear" Content="Clear" Margin="283,0,67,10" Grid.Row="3" Click="Clear_Click" FontWeight="Bold" FontSize="24" Background="#FF686868" BorderBrush="#FF686868"/>
+        <TextBlock x:Name="Copyright" Margin="196,59,196,2" TextWrapping="Wrap" Grid.Row="3" IsHitTestVisible="False" Foreground="#FFAFAFAF" Text=" Enzo Desbois 2024"/>
 
     </Grid>
 </Window>

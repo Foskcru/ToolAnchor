@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ico.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("userwidget_64-svg-ico.ico")]
 
 
