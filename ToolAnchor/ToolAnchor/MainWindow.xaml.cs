@@ -26,7 +26,7 @@ namespace ToolAnchor
         public MainWindow()
         {
             InitializeComponent();
-            //ResizeMode = ResizeMode.CanMinimize;
+            ResizeMode = ResizeMode.CanMinimize;
             Topmost = true;
             WidgetRichTextBox.Document.Blocks.Clear(); 
         }
@@ -120,6 +120,18 @@ namespace ToolAnchor
             ChangeVisibility(AnchorAdjustText, DefaultAnchorAdjust);
         }
 
+        private void Paste_Click(object sender, RoutedEventArgs e)
+        {
+            WidgetRichTextBox.Document.Blocks.Clear();
+            WidgetRichTextBox.AppendText(Clipboard.GetText());
+        }
+
+        private void Copy_Click(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(AnchorAdjustText.Text))
+                Clipboard.SetDataObject(AnchorAdjustText.Text);
+        }
+
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
             //widthRatio = -10;
@@ -144,11 +156,7 @@ namespace ToolAnchor
             AnchorAdjustText.Text = "";
         }
 
-        private void Copy_Click(object sender, RoutedEventArgs e)
-        {
-            if (!string.IsNullOrEmpty(AnchorAdjustText.Text))
-                Clipboard.SetDataObject(AnchorAdjustText.Text);
-        }
+
         
         private void WidgetRichTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -186,5 +194,7 @@ namespace ToolAnchor
             }
             SetAnchorAdjust();
         }
+
+    
     }
 }

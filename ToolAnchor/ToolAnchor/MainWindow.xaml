@@ -6,13 +6,14 @@
         xmlns:local="clr-namespace:ToolAnchor"
         mc:Ignorable="d"
         
-        Title="Tool Anchor" Height="340" Width="500" Background="#FF242424" Icon="/UserWidget_64-svg-ICO.ico">
+        Title="Tool Anchor" Height="360" Width="500" Background="#FF242424" Icon="/UserWidget_64-svg-ICO.ico">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="61.018"/>
             <RowDefinition Height="150"/>
-            <RowDefinition Height="Auto" MinHeight="38"/>
-            <RowDefinition/>
+            <RowDefinition Height="38.007"/>
+            <RowDefinition Height="73.682"/>
+            <RowDefinition Height="0.278"/>
         </Grid.RowDefinitions>
         <TextBox x:Name="WidthText" Margin="10,10,10,33" TextWrapping="Wrap" Foreground="#FFAFAFAF" Background="#FF151515" TextChanged="WidthText_TextChanged"/>
         <TextBox x:Name="HeightText" Margin="10,33,10,10" TextWrapping="Wrap" Foreground="#FFAFAFAF" Background="#FF151515" TextChanged="HeightText_TextChanged"/>
@@ -27,11 +28,12 @@
         <TextBlock x:Name="DefaultWidth" Margin="10,10,290,33" TextWrapping="Wrap" Text=" Width" Foreground="#FFAFAFAF" IsHitTestVisible="False"/>
         <TextBlock x:Name="DefaultHeight" Margin="10,33,290,10" TextWrapping="Wrap" Text=" Height" IsHitTestVisible="False" Foreground="#FFAFAFAF"/>
         <TextBlock x:Name="DefaultWidget" Margin="10,10,290,10" TextWrapping="Wrap" Text=" Widget" IsHitTestVisible="False" Foreground="#FFAFAFAF" Grid.Row="1"/>
+        <Button x:Name="Paste" Content="Paste" Margin="421,120,10,10" Grid.Row="1" Background="#FF686868" FontWeight="Bold" BorderBrush="#FFABADB3" Click="Paste_Click"/>
         <TextBlock x:Name="DefaultAnchorAdjust" Margin="10,10,290,10" TextWrapping="Wrap" Grid.Row="2" IsHitTestVisible="False" Foreground="#FFAFAFAF" Text=" Anchor Adjustg"/>
-        <Canvas Grid.Row="3"/>
-        <Button x:Name="Copy" Content="Copy" Margin="67,0,283,10" Grid.Row="3" Click="Copy_Click" Background="#FFE8175D" FontWeight="Bold" FontSize="24" BorderBrush="#FFE8175D"/>
-        <Button x:Name="Clear" Content="Clear" Margin="283,0,67,10" Grid.Row="3" Click="Clear_Click" FontWeight="Bold" FontSize="24" Background="#FF686868" BorderBrush="#FF686868"/>
-        <TextBlock x:Name="Copyright" Margin="196,59,196,2" TextWrapping="Wrap" Grid.Row="3" IsHitTestVisible="False" Foreground="#FFAFAFAF" Text=" Enzo Desbois 2024"/>
+        <Canvas Grid.Row="2" Margin="0,38,0,0" Grid.RowSpan="3"/>
+        <Button x:Name="Copy" Content="Copy" Margin="67,0,283,15" Grid.Row="3" Click="Copy_Click" Background="#FFE8175D" FontWeight="Bold" FontSize="24" BorderBrush="#FFE8175D"/>
+        <Button x:Name="Clear" Content="Clear" Margin="283,0,67,15" Grid.Row="3" Click="Clear_Click" FontWeight="Bold" FontSize="24" Background="#FF686868" BorderBrush="#FF686868"/>
+        <TextBlock x:Name="Copyright" Margin="0,58,0,0" TextWrapping="Wrap" Grid.Row="3" IsHitTestVisible="False" Foreground="#FFAFAFAF" Text=" Enzo Desbois 2024" Width="150" HorizontalAlignment="Center" TextAlignment="Center" Grid.RowSpan="2" FontSize="11" FontWeight="Bold"/>
 
     </Grid>
 </Window>
